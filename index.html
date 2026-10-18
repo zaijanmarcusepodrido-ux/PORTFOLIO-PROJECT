@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#071414">
+    <title>Zaijan Marcus | IT Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <a href="#home" class="logo"><span>&lt;/&gt;</span> ZAIJAN<span class="logo-end">.dev</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="nav-controls">
+            <select id="themeColor" aria-label="Choose theme">
+                <option value="teal">Teal + Lime</option>
+                <option value="green">Green</option>
+                <option value="sky">Sky Blue</option>
+                <option value="pink">Pink</option>
+                <option value="black">Black + Silver</option>
+                <option value="orange">Orange</option>
+                <option value="purple">Purple</option>
+            </select>
+            <button id="modeToggle" class="mode-toggle">☀ Light Mode</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero-content">
+                <div class="intro-label"><span class="status-dot"></span> ZAIJAN MARCUS</div>
+                <p class="eyebrow">BSIT STUDENT · ASPIRING IT SUPPORT PROFESSIONAL</p>
+                <h1>Learning today.<br>Building a <span class="gradient-text">better tomorrow.</span></h1>
+                <p class="hero-description">Hello! I'm Zaijan Marcus, a Bachelor of Science in Information Technology student interested in programming, computer systems, and technology. I'm building my skills one project at a time.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="button button-primary">Explore My Work ↗</a>
+                    <a href="#contact" class="button button-outline">Contact Me ✉</a>
+                </div>
+                <p class="live-time">LOCAL TIME <span id="currentTime">Loading...</span></p>
+            </div>
+            <div class="hero-visual">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="avatar-circle"><span>Z</span><span>M</span></div>
+                <div class="floating-card"><span class="status-dot"></span><div><strong>Always Learning</strong><p>One step closer to my goal.</p></div></div>
+                <div class="code-chip">&lt; Hello World /&gt;</div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="section-heading">
+                <div><p class="eyebrow">GET TO KNOW ME</p><h2>About <span class="gradient-text">Me</span></h2></div>
+                <span class="section-number">01 / ABOUT</span>
+            </div>
+            <div class="about-grid">
+                <article class="panel about-main">
+                    <span class="panel-icon">⌘</span>
+                    <h3>A Student with a Goal</h3>
+                    <p>I am currently studying Information Technology and learning how software, computer systems, and networks work. I enjoy practicing coding, exploring technology, and improving through hands-on activities.</p>
+                    <p>My goal is to become an IT Support professional and eventually work aboard a ship as an IT seafarer. I want to gain practical skills in troubleshooting, networking, and computer maintenance.</p>
+                    <button class="text-button" id="readMoreBtn">Read More ↗</button>
+                    <div id="extraInfo" hidden><p>Outside my studies, I enjoy online chess, gaming, fitness, and anime. I believe patience, practice, and a willingness to learn will help me grow into a dependable IT professional.</p></div>
+                </article>
+                <article class="panel details-panel">
+                    <h3>Personal Details</h3>
+                    <div class="detail-row"><span>Name</span><strong>Zaijan Marcus</strong></div>
+                    <div class="detail-row"><span>Education</span><strong>BS Information Technology</strong></div>
+                    <div class="detail-row"><span>Field of Interest</span><strong>IT Support</strong></div>
+                    <div class="detail-row"><span>Career Goal</span><strong>IT Seafarer</strong></div>
+                    <div class="detail-row"><span>Current Status</span><strong class="available">Learning & Growing</strong></div>
+                    <button class="button button-outline full-button" id="welcomeBtn">Say Hello to Me!</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <div><p class="eyebrow">WHAT I'M LEARNING</p><h2>My <span class="gradient-text">Skills</span></h2><p class="section-subtitle">My current programming skills as I continue to practice.</p></div>
+                <span class="section-number">02 / SKILLS</span>
+            </div>
+            <div class="skills-grid">
+                <article class="panel skill-card"><div class="skill-top"><span class="skill-icon html-icon">5</span><h3>HTML</h3><strong>45%</strong></div><div class="progress-track"><div class="progress-fill" style="--progress:45%"></div></div><p>Building the structure of web pages.</p></article>
+                <article class="panel skill-card"><div class="skill-top"><span class="skill-icon cpp-icon">C+</span><h3>C++</h3><strong>39%</strong></div><div class="progress-track"><div class="progress-fill" style="--progress:39%"></div></div><p>Practicing programming logic and syntax.</p></article>
+                <article class="panel skill-card"><div class="skill-top"><span class="skill-icon c-icon">C</span><h3>C</h3><strong>49%</strong></div><div class="progress-track"><div class="progress-fill" style="--progress:49%"></div></div><p>Learning core programming concepts.</p></article>
+                <article class="panel skill-card"><div class="skill-top"><span class="skill-icon java-icon">J</span><h3>Java</h3><strong>20%</strong></div><div class="progress-track"><div class="progress-fill" style="--progress:20%"></div></div><p>Learning Java syntax and basic applications.</p></article>
+            </div>
+            <div class="panel goal-panel"><div class="goal-symbol">⌁</div><div><p class="eyebrow">MY CAREER DIRECTION</p><h3>From IT Student to IT Seafarer</h3><p>I aim to become an IT Support professional and eventually work aboard a ship as an IT seafarer. I want to develop my skills in troubleshooting, networking, computer maintenance, and technical support.</p></div></div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <div><p class="eyebrow">MY LEARNING JOURNEY</p><h2>Featured <span class="gradient-text">Projects</span></h2><p class="section-subtitle">Projects I have worked on during my studies.</p></div>
+                <span class="section-number">03 / PROJECTS</span>
+            </div>
+
+            <div class="projects-grid">
+                <article class="panel project-card">
+                    <div class="project-art"><span>🎁</span></div>
+                    <div class="project-body"><span class="project-type">INTERACTIVE WEBSITE</span><h3>Teachers' Gift</h3><p>An interactive digital gift website made to show appreciation for teachers.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><button class="project-link view-project" data-project="0">View Project ↗</button></div>
+                </article>
+                <article class="panel project-card">
+                    <div class="project-art"><span>📖</span></div>
+                    <div class="project-body"><span class="project-type">WEB DEVELOPMENT</span><h3>My Stories Book</h3><p>A book-style website for reading and presenting stories.</p><div class="tags"><span>HTML</span><span>CSS</span></div><button class="project-link view-project" data-project="1">View Project ↗</button></div>
+                </article>
+                <article class="panel project-card">
+                    <div class="project-art"><span>💻</span></div>
+                    <div class="project-body"><span class="project-type">HTML PRACTICE</span><h3>HTML Monday</h3><p>A website project created during HTML practice.</p><div class="tags"><span>HTML</span><span>CSS</span></div><button class="project-link view-project" data-project="2">View Project ↗</button></div>
+                </article>
+                <article class="panel project-card">
+                    <div class="project-art"><span>👨‍💻</span></div>
+                    <div class="project-body"><span class="project-type">PERSONAL WEBSITE</span><h3>About Me</h3><p>A personal webpage introducing its creator.</p><div class="tags"><span>HTML</span><span>CSS</span></div><button class="project-link view-project" data-project="3">View Project ↗</button></div>
+                </article>
+                <article class="panel project-card">
+                    <div class="project-art"><span>🎬</span></div>
+                    <div class="project-body"><span class="project-type">MULTIMEDIA WEBSITE</span><h3>My Multimedia Webpage</h3><p>A webpage project for presenting multimedia content.</p><div class="tags"><span>HTML</span><span>CSS</span></div><button class="project-link view-project" data-project="4">View Project ↗</button></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="section-heading"><div><p class="eyebrow">LET'S CONNECT</p><h2>Contact <span class="gradient-text">Me</span></h2></div><span class="section-number">04 / CONTACT</span></div>
+            <div class="contact-panel panel">
+                <div><p class="eyebrow">GET IN TOUCH</p><h3>Have a question or want to connect?</h3><p>Feel free to contact me about my projects, learning journey, or future opportunities.</p><a class="button button-primary email-cta" href="mailto:zaijanmarcusepodrido@gmail.com?subject=Portfolio%20Inquiry">Email Me Now ↗</a></div>
+                <div class="contact-details">
+                    <div class="contact-item"><span>✉</span><div><small>EMAIL ADDRESS</small><a class="contact-link" href="mailto:zaijanmarcusepodrido@gmail.com" id="emailText">zaijanmarcusepodrido@gmail.com</a></div><button class="copy-button" id="copyEmailBtn">Copy</button></div>
+                    <div class="contact-item"><span>☎</span><div><small>PHONE NUMBER</small><a class="contact-link" href="tel:+639618141359">09618141359</a></div><a class="copy-button call-button" href="tel:+639618141359">Call</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+        <div class="project-modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal-header"><div><p class="eyebrow">PROJECT DETAILS</p><h2 id="modalTitle">Project Name</h2></div><button id="closeProject" class="modal-close" aria-label="Close project preview">✕</button></div>
+            <p id="modalDescription" class="modal-description"></p>
+            <div class="modal-meta"><div><small>PROJECT TYPE</small><strong id="modalType"></strong></div><div><small>TECHNOLOGIES</small><div id="modalTags" class="tags"></div></div></div>
+            <h3 class="preview-title">Live Website Preview</h3>
+            <div class="preview-frame"><p id="previewLoading">Loading project preview...</p><iframe id="projectFrame" title="Live project preview" loading="lazy"></iframe></div>
+            <p id="previewNote" class="preview-note">If the preview does not load, check whether GitHub Pages is enabled for this repository.</p>
+            <div class="modal-actions"><a href="#" id="sourceCodeLink" class="button button-outline" target="_blank" rel="noopener">View Source Code ↗</a><a href="#" id="liveSiteLink" class="button button-primary" target="_blank" rel="noopener">Open Live Website ↗</a></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <a href="#home" class="logo"><span>&lt;/&gt;</span> ZAIJAN<span class="logo-end">.dev</span></a>
+        <p>Designed and built by Zaijan Marcus.</p>
+        <p>© <span id="currentYear"></span> All rights reserved.</p>
+    </footer>
+    <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+</body>
+</html>
